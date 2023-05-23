@@ -79,7 +79,7 @@ const img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABrCAIAAAAw3x3dAAA
   return (
     <div style={container}>
       <div className="logo">
-        <img src={img}/>
+        <img src="./companylogo.png"/>
       </div>
         <h1>Login</h1>
         <div style={form} >
