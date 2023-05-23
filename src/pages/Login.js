@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import { useNavigate } from "react-router-dom";
 import { db, auth, storage } from "../config/config";
 import { signInWithEmailAndPassword  } from 'firebase/auth';
-
+import Logo from "../assets/logo.png"
 const Login = () => {
     const navigate = useNavigate();
     const [erMsg, setErrmsg]= useState([])
@@ -79,7 +79,7 @@ const Login = () => {
   return (
     <div style={container}>
       <div className="logo">
-        <img src="/logo.png"/>
+        <img src={Logo}/>
       </div>
         <h1>Login</h1>
         <div style={form} >
