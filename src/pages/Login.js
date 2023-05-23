@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 import { useNavigate } from "react-router-dom";
 import { db, auth, storage } from "../config/config";
 import { signInWithEmailAndPassword  } from 'firebase/auth';
-import Logo from "../assets/logo.png"
+import Logo from "../assets/companylogo.png"
 const Login = () => {
     const navigate = useNavigate();
     const [erMsg, setErrmsg]= useState([])
