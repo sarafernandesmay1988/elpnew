@@ -53,7 +53,7 @@ const img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABrCAIAAAAw3x3dAAA
         display: 'block',
         textAlign: 'center',
         margin: '0 auto',
-        backgroundColor: 'pink',
+        backgroundColor: 'rgb(180, 180, 180)',
         width: "50%",
         height: "400px",
         marginTop: "50px"
@@ -62,7 +62,7 @@ const img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABrCAIAAAAw3x3dAAA
         display: 'block',
         textAlign: 'center',
         margin: '0 auto',
-        backgroundColor: 'pink',
+        backgroundColor: 'rgb(180, 180, 180)',
         width: "50%",
        paddingTop: "10px"
       }
@@ -79,7 +79,7 @@ const img="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABrCAIAAAAw3x3dAAA
   return (
     <div style={container}>
       <div className="logo">
-        <img src="./companylogo.png"/>
+        <img className="logo" src="./companylogo.png"/>
       </div>
         <h1>Login</h1>
         <div style={form} >

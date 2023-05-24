@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+
 .App {
   text-align: center;
 }
 
+body{
+  background: #000;
+}
 .parent-box{
   display: flex;
   flex-direction: row;
@@ -11,6 +17,9 @@
   padding-left:10px;
 } 
 
+.logo{
+  padding-top:20px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

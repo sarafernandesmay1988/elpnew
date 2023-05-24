@@ -19,9 +19,12 @@ const [holidays, setholidays] = useState([])
 const [openDropdown, setopenDropdown] = useState(false)
 const [Posts, setPosts] = useState([])
 const [userHolidayData, setuserHolidayData] = useState([])
+const [openId, setOpenid] = useState('')
 
 const [approvalValue, setApprovalValue] = useState('')
-const openDropdownHandler = () =>{
+const openDropdownHandler = (e) =>{
+  console.log(e.target.id)
+  setOpenid(e.target.id)
   setopenDropdown(!openDropdown)
 }
 const data= useFetchHolidays()
@@ -93,15 +96,15 @@ useEffect(() => {
 				<div className="table-data">{item.fromDate}</div>
 				<div className="table-data">{item.toDate}</div>
 				<div className="table-data">{item.reason}</div>
-        <div className="table-data"
+        <div className="table-data" id={item.id}
         onClick={openDropdownHandler}>
           {item.status ? item.status : 'Pending'}</div>
           {
-            openDropdown && (
+            openDropdown && openId === item.id && (
               <>
               <select
               onChange={handleSelect}
-              name="se" id={item.id}
+              name={item.name} value={item.name} id={item.id}
               >
   <option value="Approve"></option>
   <option value="Approve">Approve</option>
